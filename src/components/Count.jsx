@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const Count = () => {
     const [count, setCount] = useState(0)
     const handleAdd = () => {
@@ -17,7 +18,7 @@ const Count = () => {
     }
 
     return (
-        <div>
+        <div className='box'>
             <h2>{count}</h2>
             <button onClick={handleRemove}>click me - </button>
             <button onClick={handleAdd}>Click me +</button>

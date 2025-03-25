@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../App.css'
 
 const ShowHide = () => {
     const [Show, setShow] = useState(true);
@@ -6,7 +7,7 @@ const ShowHide = () => {
         setShow(!Show)
     }
     return (
-        <div>
+        <div className='box'>
             {
                 Show && <h2>Learn react</h2>
             }
